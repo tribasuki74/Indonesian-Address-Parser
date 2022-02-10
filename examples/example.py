@@ -1,6 +1,14 @@
 # import class from module
 
-from My_Module import My_Module
+# from Indonesian_Address_Parser import Indonesian_Address_Parser
+from Indonesian_Address_Parser import Indonesian_Address_Parser
 
-my_module = My_Module()
-my_module.myfunction()
+indonesianParser = Indonesian_Address_Parser()
+
+result = indonesianParser.getKodePos({"urban": "Srijaya"})
+if result:
+    for res in result:
+        print(res)
+        print()
+
+

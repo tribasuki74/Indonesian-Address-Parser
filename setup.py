@@ -6,16 +6,16 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="Indonesian-Address-Parser",
+    name="Indonesian_Address_Parser",
     version="0.0.1",
     description='Python library for Game Guesser',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/tribasuki74/myenglish',
-    download_url='https://github.com/tribasuki74/myenglish/archive/v0.3.1.tar.gz',    
+    url='https://github.com/tribasuki74/Indonesian-Address-Parser',
+    download_url='https://github.com/tribasuki74/Indonesian-Address-Parser/archive/v0.0.1.tar.gz',    
     author="Tri Basuki Kurniawan",
     author_email='tribasuki@thelorry.com',
-    packages=find_packages(exclude=("tests", "examples", )),
+    packages=["Indonesian_Address_Parser", "database"],
     license='MIT',
     install_requires=[],
     classifiers=[
